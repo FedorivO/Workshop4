@@ -6,9 +6,8 @@ CREATE TABLE city (
 ALTER TABLE city ADD CONSTRAINT city_pk PRIMARY KEY ( city_name );
 
 CREATE TABLE criminal (
-    date_of_crime         timestamp,
+    year_of_crime         INTEGER,
     crime_id              INTEGER NOT NULL,
-    person_gender_gender  CHAR(2 CHAR) NOT NULL,
     crime_crime_name      CHAR(40 CHAR) NOT NULL,
     city_city_name        CHAR(30 CHAR) NOT NULL,
     person_person_id      INTEGER NOT NULL
@@ -26,7 +25,7 @@ ALTER TABLE criminal
 
 CREATE TABLE person (
     name             CHAR(40 CHAR),
-    date_of_birth    timestamp,
+    year_of_birth    INTEGER,
     armed_yes_or_no  CHAR(10 CHAR),
     gender           CHAR(2 CHAR) NOT NULL,
     person_id        INTEGER NOT NULL
